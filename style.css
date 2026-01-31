@@ -1,0 +1,111 @@
+:root { 
+    --primary: #6c5ce7; 
+    --bg: #dfe6e9;
+    --text: #2d3436;
+}
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.saldo-box {
+    text-align: right;
+}
+
+.saldo-valor {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Actions */
+.actions {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+}
+
+.btn-deposit {
+    background-color: #00b894;
+}
+
+.btn-pay {
+    background-color: #d63031;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Extract Area */
+.extract {
+    padding: 20px;
+}
+
+.extract-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    color: #636e72;
+    font-size: 0.9rem;
+}
+
+.entrada {
+    color: #00b894;
+    font-weight: bold;
+}
+
+.saida {
+    color: #d63031;
+    font-weight: bold;
+}
